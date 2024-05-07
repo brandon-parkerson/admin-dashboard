@@ -1,0 +1,87 @@
+@font-face {
+    font-family: myFont;
+    src: url(images/Roboto-Light.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
+h1 {
+    font-family: myFont;
+    
+}
+.logo {
+    height: auto;
+    width: 25px;
+    justify-self: center;
+}
+
+.dashboard-logo {
+    height: auto;
+    width: 45px;
+    justify-self: center;
+}
+
+.sidebar {
+    background-color: #0ea5e9;
+    color: white;
+    height: 100vh;
+    
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px repeat(5, 60px) 100px repeat(3, 40px);
+    justify-items: start;
+    align-items: center;
+}
+
+.settings {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    
+}
+
+.support {
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+}
+
+.privacy {
+    grid-column: 2 / 3;
+    grid-row: 10 / 11;
+}
+
+.comm {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+    
+}
+
+.tasks {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+.history {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+.messages {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.profile {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.home {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

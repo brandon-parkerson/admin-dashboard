@@ -26,6 +26,7 @@ body {
     align-items: center;
     gap: 10px;
     box-shadow: 0 6px 2px -2px rgb(155, 155, 155);
+    padding: 10px;
 }
 
 button {
@@ -76,7 +77,13 @@ h2 {
     width: 700px;
     padding: 15px;
     font-family: myFont;
-    font-size: 20px;
+    font-size: 15px;
+    
+}
+.search-bar:focus {
+    border: none;
+    box-shadow: 5px 2px rgb(155, 155, 155);
+    outline: none;
 }
 .notification {
     height: auto;
@@ -231,9 +238,12 @@ h2 {
     grid-template-rows: 1fr 1fr 1fr;
 }
 .trending-card {
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 10px;
     height: 100%;
     align-content: center;
+    font-family: myFont;
+    color: rgb(61, 61, 61);
 }
 
 .ann-card {
@@ -298,4 +308,15 @@ h2 {
 .card-1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+}
+.trending-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.user-pic {
+    height: 45px;
+    width: 45px;
 }
